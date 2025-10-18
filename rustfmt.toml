@@ -1,0 +1,6 @@
+# https://rust-lang.github.io/rustfmt/
+# https://doc.rust-lang.org/nightly/style-guide/
+
+edition = "2024"
+
+hard_tabs = true

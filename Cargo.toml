@@ -1,0 +1,12 @@
+[package]
+name = "css_recess_order"
+version = "0.1.0"
+authors = ["Jeff (https://tidaltheory.io)"]
+categories = ["text-processing"]
+edition = "2024"
+keywords = ["bootstrap", "css", "property-order", "recess"]
+license = "ISC"
+repository = "https://github.com/stormwarning/css-recess-order-rs"
+description = "Recess-based sort order for CSS properties."
+
+[dependencies]
