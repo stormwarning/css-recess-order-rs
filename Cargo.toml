@@ -2,7 +2,7 @@
 name = "css_recess_order"
 version = "0.1.0"
 authors = ["Jeff (https://tidaltheory.io)"]
-categories = ["text-processing"]
+categories = ["text-processing", "value-formatting"]
 edition = "2024"
 keywords = ["bootstrap", "css", "property-order", "recess"]
 license = "ISC"
