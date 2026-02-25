@@ -1,6 +1,6 @@
 [package]
 name = "css_recess_order"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Jeff (https://tidaltheory.io)"]
 categories = ["text-processing", "value-formatting"]
 edition = "2024"

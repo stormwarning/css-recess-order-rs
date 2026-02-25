@@ -4,6 +4,8 @@
 
 ## Unreleased — ReleaseDate
 
+## 0.2.0 — 2026-02-25
+
 ### Minor changes
 
 - Update properties to match upstream Recess order package
