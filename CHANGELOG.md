@@ -1,6 +1,12 @@
 # Change Log
 
-## 0.1.0 (2025-10-18)
+## Unreleased
+
+### Minor changes
+
+- Update properties to match upstream Recess order package
+
+## 0.1.0 — 2025-10-18
 
 #### 🎉 Initial release
 
@@ -22,4 +28,3 @@
     - Add registry category ([`be88c3a`](https://github.com/stormwarning/css-recess-order-rs/commit/be88c3a1e629da8ae1d8ef88cd35be9883bf75fc))
     - Initialise project ([`08b9f40`](https://github.com/stormwarning/css-recess-order-rs/commit/08b9f406bcd1fd193edc8452091e3ea310bfdcc6))
 </details>
-
