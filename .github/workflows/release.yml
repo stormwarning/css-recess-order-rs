@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      # https://github.com/actions/checkout
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      # https://github.com/bruits/sampo/tree/main/crates/sampo-github-action
+      - name: Create release PR or publish crate
+        id: sampo
+        uses: bruits/sampo/crates/sampo-github-action@main
+        with:
+          pr-title: Publish release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARGO_TOKEN: ${{ secrets.CARGO_TOKEN }}
