@@ -26,6 +26,7 @@ jobs:
         id: sampo
         uses: bruits/sampo/crates/sampo-github-action@main
         with:
+          create-github-release: true
           pr-title: Publish release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
