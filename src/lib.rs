@@ -29,6 +29,14 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"box-sizing",
 	"display",
 	"visibility",
+	// Multi-column layout
+	"columns",
+	"column-width",
+	"column-count",
+	"column-height",
+	"column-wrap",
+	"column-span",
+	"column-fill",
 	// Flexible box layout
 	"flex",
 	"flex-grow",
@@ -57,10 +65,15 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"grid-gap",
 	"grid-row-gap",
 	"grid-column-gap",
-	// Box alignment (Flexbox and Grid)
+	// Gaps
 	"gap",
 	"row-gap",
 	"column-gap",
+	"column-rule",
+	"column-rule-width",
+	"column-rule-style",
+	"column-rule-color",
+	// Box alignment (Flexbox and Grid)
 	"place-content",
 	"place-items",
 	"place-self",
@@ -179,6 +192,9 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"alignment-baseline",
 	"baseline-shift",
 	"dominant-baseline",
+	"text-box",
+	"text-box-trim",
+	"text-box-edge",
 	// Colors
 	"base-palette",
 	"override-colors",
@@ -194,6 +210,7 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"text-justify",
 	"text-indent",
 	"text-transform",
+	"text-autospace",
 	"word-spacing",
 	"letter-spacing",
 	"hyphens",
@@ -241,6 +258,7 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"cursor",
 	"caret-color",
 	"zoom",
+	"field-sizing",
 	"resize",
 	"user-select",
 	"nav-index",
@@ -449,6 +467,14 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"text-orientation",
 	"text-combine-upright",
 	// SVG presentation attributes
+	"x",
+	"y",
+	"rx",
+	"ry",
+	"cx",
+	"cy",
+	"r",
+	"d",
 	"text-anchor",
 	"fill",
 	"fill-rule",
@@ -461,6 +487,7 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"stroke-miterlimit",
 	"stroke-dasharray",
 	"stroke-dashoffset",
+	"vector-effect",
 	"color-interpolation",
 	"color-interpolation-filters",
 	"flood-color",
@@ -475,6 +502,10 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"paint-order",
 	"shape-rendering",
 	"text-rendering",
+	// MathML properties
+	"math-style",
+	"math-shift",
+	"math-depth",
 	// Transforms
 	"transform",
 	"transform-origin",
@@ -492,6 +523,7 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"transition-timing-function",
 	"transition-duration",
 	"transition-property",
+	"transition-behavior",
 	// View transitions
 	"view-transition-name",
 	"view-transition-class",
@@ -506,6 +538,18 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"animation-fill-mode",
 	"animation-play-state",
 	"animation-composition",
+	// Scroll-driven animations
+	"animation-range",
+	"animation-range-start",
+	"animation-range-end",
+	"scroll-timeline",
+	"scroll-timeline-axis",
+	"scroll-timeline-name",
+	"view-timeline",
+	"view-timeline-axis",
+	"view-timeline-inset",
+	"view-timeline-name",
+	"timeline-scope",
 	// Motion path
 	"offset",
 	"offset-position",
@@ -515,6 +559,8 @@ pub const PROPERTY_ORDER: &[&str] = &[
 	"offset-anchor",
 	// Will change
 	"will-change",
+	// Paged media
+	"page",
 	// Fragmentation
 	"break-before",
 	"break-after",
