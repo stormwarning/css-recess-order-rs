@@ -8,8 +8,9 @@ version = 1
 
 [changelog]
 # Options for release notes generation.
-# show_commit_hash = true (default)
+show_commit_hash = false
 # show_acknowledgments = true (default)
+exclude_acknowledgments = ['stormwarning']
 
 [packages]
 # Options for package discovery and filtering.
